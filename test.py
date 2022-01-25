@@ -1,16 +1,9 @@
-n = int(input())
+list1 = [[1, 7, 8], [9, 7, 102], [102, 106, 105], [100, 99, 98, 103], [1, 2, 3]]
+total = 0
+counter = 0
 
-sp1 = [ (input()) for i in range(n) ]
-for i in range(n):
-    for c in 'anton':
-        if c in sp1[i]:
-            sp1[i] = sp1[i][sp1[i].find(c):]
-           # print(sp1[i])
-            flag = True
-        else:
-            flag = False
-            break
-        #print(flag)    
-    if flag == True:
-        print(i+1, end=' ')
+for elem in list1:
+    total += sum(elem)
+    counter += len(elem)
+print(total/counter)
 
